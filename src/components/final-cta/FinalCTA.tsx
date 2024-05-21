@@ -9,13 +9,6 @@ export const FinalCTA = () => {
       <div className="mx-auto flex max-w-5xl flex-col items-center">
         <LogoLarge />
         <SectionHeading>Ready to go?</SectionHeading>
-        <p className="mx-auto mb-8 text-center text-base leading-relaxed md:text-xl md:leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-          blanditiis?
-        </p>
-        <Button intent="primary">
-          <span className="font-bold">GET STARTED </span>
-        </Button>
       </div>
     </section>
   );

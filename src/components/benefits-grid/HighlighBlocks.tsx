@@ -7,6 +7,7 @@ import {
   FiDollarSign,
   FiFeather,
   FiInbox,
+  FiLock,
   FiMove,
   FiRepeat,
   FiSmile,
@@ -20,58 +21,40 @@ export const HighlighBlocks = () => {
   return (
     <>
       <HighlightBlock
-        Icon={FiDollarSign}
-        iconClassName="text-green-500"
-        title="Save on planning"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        Icon={FiLock}
+        iconClassName="text-black-500"
+        title="Secure your data"
+        subtitle="Protect your data on our secure platform."
       />
       <HighlightBlock
         Icon={FiArrowUpRight}
         iconClassName="text-pink-500"
-        title="Grow your margins"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        title="Grow your business"
+        subtitle="Give a boost to your business with AI."
       />
       <HighlightBlock
         Icon={FiSmile}
         iconClassName="text-blue-500"
         title="Increase productivity"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        subtitle="Make life easier for all collaborators with AI."
       />
       <HighlightBlock
         Icon={FiCoffee}
         iconClassName="text-orange-500"
         title="No more late nights"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        subtitle="AI will do the heavy lifting for you."
       />
       <HighlightBlock
-        Icon={FiFeather}
-        iconClassName="text-zinc-500"
-        title="Take better notes"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      />
-      <HighlightBlock
-        Icon={FiInbox}
-        iconClassName="text-purple-500"
-        title="Reach inbox zero"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        Icon={FiRepeat}
+        iconClassName="text-yellow-500"
+        title="Continuous improvement"
+        subtitle="Always get the freshest solution."
       />
       <HighlightBlock
         Icon={FiMove}
         iconClassName="text-fuchsia-500"
         title="Remain flexible"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      />
-      <HighlightBlock
-        Icon={FiClipboard}
-        iconClassName="text-red-500"
-        title="Stay on track"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      />
-      <HighlightBlock
-        Icon={FiRepeat}
-        iconClassName="text-yellow-500"
-        title="Repeat what works"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        subtitle="Don't like self-hosting? Use Any Solution API."
       />
     </>
   );

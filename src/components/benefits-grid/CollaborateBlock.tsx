@@ -14,21 +14,21 @@ export const CollaborateBlock = () => (
           <FiEdit className="text-4xl" />
         </div>
 
-        <Cursor nameText="John Smith" />
+        <Cursor nameText="Guest" />
         <Cursor
-          nameText="Erin Brown"
+          nameText="Rui Valente"
           wrapperClassName="top-[10%] left-[10%]"
           cursorClassName="text-blue-500"
           nameClassName="border-blue-900 bg-blue-200 text-blue-900"
         />
         <Cursor
-          nameText="Frank Daniels"
+          nameText="Admin CASS"
           wrapperClassName="top-[20%] left-[75%]"
           cursorClassName="text-green-500"
           nameClassName="border-green-900 bg-green-200 text-green-900"
         />
         <Cursor
-          nameText="Andrea Green"
+          nameText="HR Team"
           wrapperClassName="top-[70%] left-[5%]"
           cursorClassName="text-orange-500"
           nameClassName="border-orange-900 bg-orange-200 text-orange-900"
@@ -37,7 +37,7 @@ export const CollaborateBlock = () => (
       <div>
         <CardTitle>Collaborate seamlessly</CardTitle>
         <CardSubtitle>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Work with your team in the same workspace and share the same knowledge.
         </CardSubtitle>
       </div>
     </div>
