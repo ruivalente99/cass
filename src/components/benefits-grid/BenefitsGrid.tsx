@@ -5,7 +5,6 @@ import { CollaborateBlock } from "./CollaborateBlock";
 import { HighlighBlocks } from "./HighlighBlocks";
 import { SectionHeading } from "../shared/SectionHeading";
 import { SectionSubheading } from "../shared/SectionSubheading";
-import { Button } from "../shared/Button";
 
 export const BenefitsGrid = () => {
   return (
@@ -18,20 +17,16 @@ export const BenefitsGrid = () => {
       className="relative mx-auto grid max-w-6xl grid-cols-3 gap-4 px-2 md:px-4"
     >
       <div className="col-span-3">
-        <SectionHeading>The clear benefits of X</SectionHeading>
+        <SectionHeading>The clear benefits of 
+          <span className="text-orange-600"> CASS</span>
+        </SectionHeading>
         <SectionSubheading>
-          Features are good, benefits are even better! Here's a made up list for
-          reference.
+        Benefit from an intuitive platform that simplifies AI integration, making advanced technology accessible to non-technical users.
         </SectionSubheading>
       </div>
-      <IntegrationsBlock />
-      <CollaborateBlock />
       <HighlighBlocks />
-      <div className="col-span-3 mt-6 flex justify-center">
-        <Button intent="outline">
-          <span className="font-bold">GET STARTED </span>
-        </Button>
-      </div>
+      <CollaborateBlock />
+      <IntegrationsBlock />
     </motion.section>
   );
 };

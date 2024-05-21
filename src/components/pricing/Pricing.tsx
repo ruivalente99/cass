@@ -22,12 +22,16 @@ export const Pricing = () => {
               checked: true,
             },
             {
-              children: "3 Boards",
+              children: "1 Chat",
               checked: true,
             },
             {
-              children: "5 Workflows",
+              children: "Self Host",
               checked: true,
+            },
+            {
+              children: "API Integrations",
+              checked: false,
             },
             {
               children: "Upgraded Support",
@@ -37,15 +41,11 @@ export const Pricing = () => {
               children: "Custom Branding",
               checked: false,
             },
-            {
-              children: "Self Host",
-              checked: false,
-            },
           ]}
         />
         <PriceColumn
           title="Teams"
-          price={selected === "monthly" ? "12" : "8"}
+          price={selected === "monthly" ? "500" : "450"}
           statement="For teams looking to scale their team efficiently. Stay on track."
           highlight
           items={[
@@ -54,31 +54,34 @@ export const Pricing = () => {
               checked: true,
             },
             {
-              children: "∞ Boards",
+              children: "∞ Chats",
               checked: true,
             },
-            {
-              children: "∞ Workflows",
-              checked: true,
-            },
-
             {
               children: "Upgraded Support",
               checked: true,
             },
             {
-              children: "Custom Branding",
+              children: "Self Host",
+              checked: true,
+            },
+            {
+              children: "Custom Branding & Consulting",
+              checked: selected !== "monthly",
+            },
+            {
+              children: "Workshops",
               checked: false,
             },
             {
-              children: "Self Host",
+              children: "Feature Requests",
               checked: false,
-            },
+            }
           ]}
         />
         <PriceColumn
-          title="Enterprise"
-          price={selected === "monthly" ? "24" : "16"}
+          title="CASS Supreme Plan"
+          price={"By Quote"}
           statement="For enterprises looking to see new heights. Manage without the stress"
           items={[
             {
@@ -86,26 +89,30 @@ export const Pricing = () => {
               checked: true,
             },
             {
-              children: "∞ Boards",
+              children: "∞ Chats",
               checked: true,
             },
             {
-              children: "∞ Workflows",
-              checked: true,
-            },
-
-            {
-              children: "Enterprise Support",
+              children: "Upgraded Support",
               checked: true,
             },
             {
-              children: "Custom Branding",
+              children: "Custom Branding & Consulting",
               checked: true,
             },
             {
               children: "Self Host",
               checked: true,
             },
+            {
+              children: "Workshops",
+              checked: true,
+            },
+            {
+              children: "Feature Requests",
+              checked: true,
+            }
+         
           ]}
         />
       </div>
@@ -158,12 +165,15 @@ const PriceColumn = ({ highlight, title, price, statement, items }: Props) => {
             }}
             className="block text-6xl font-bold"
           >
-            ${price}
+            {
+              price === "By Quote" ? price : `${price}€`
+            }
           </motion.span>
         </AnimatePresence>
         <motion.div layout className="font-medium text-zinc-600">
-          <span className="block">/user</span>
-          <span className="block">/month</span>
+          {
+            price === "By Quote" ? <span className="block"></span> : <span className="block">/month</span>
+          }
         </motion.div>
       </div>
 
