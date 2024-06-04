@@ -9,9 +9,6 @@ export const EmailCapture = () => {
           <h2 className="mb-2 text-center text-3xl font-medium md:text-start">
             Join our mailing list
           </h2>
-          <p className="text-center text-lg text-zinc-400 md:text-start">
-            Mailing lists are a great way to keep customer engaged.
-          </p>
         </div>
         <form
           onSubmit={(e) => e.preventDefault()}
